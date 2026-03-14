@@ -3,1267 +3,481 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ===== SEO META TAGS ===== -->
-  <title>GameVault – Latest Gaming News, Reviews & Tips</title>
-  <meta name="description" content="GameVault is your ultimate destination for gaming news, game reviews, walkthroughs, and tips. Stay updated with the latest in PC, console, and mobile gaming." />
-  <meta name="keywords" content="gaming blog, game reviews, gaming news, PC games, PS5, Xbox, mobile games, walkthroughs, gaming tips" />
+  <title>GameVault – Latest Gaming News, Reviews & Tips 2025</title>
+  <meta name="description" content="GameVault is your ultimate destination for PC gaming news, game reviews, walkthroughs, and tips. Stay updated with the latest in PC gaming 2025." />
+  <meta name="keywords" content="gaming blog, PC game reviews, gaming news 2025, PC games, gaming tips, walkthroughs, best PC games" />
   <meta name="author" content="GameVault" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://yourdomain.com/" />
-
-  <!-- ===== OPEN GRAPH (Social Sharing) ===== -->
+  <link rel="canonical" href="https://jhanitin8765-cyber.github.io/Gamevault/" />
   <meta property="og:title" content="GameVault – Latest Gaming News, Reviews & Tips" />
-  <meta property="og:description" content="Your ultimate destination for gaming news, reviews, and tips." />
+  <meta property="og:description" content="Your ultimate destination for PC gaming news, reviews, and tips." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://yourdomain.com/" />
-  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
-
-  <!-- ===== TWITTER CARD ===== -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="GameVault – Latest Gaming News" />
-  <meta name="twitter:description" content="Gaming news, reviews & tips for every gamer." />
-
-  <!-- ===== STRUCTURED DATA (Google Rich Results) ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "GameVault",
-    "url": "https://yourdomain.com",
-    "description": "Latest gaming news, reviews, and tips",
-    "publisher": {
-      "@type": "Organization",
-      "name": "GameVault",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://yourdomain.com/logo.png"
-      }
-    }
-  }
-  </script>
-
-  <!-- ===== GOOGLE ADSENSE (Replace with your publisher ID) ===== -->
+  <meta property="og:url" content="https://jhanitin8765-cyber.github.io/Gamevault/" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"GameVault","url":"https://jhanitin8765-cyber.github.io/Gamevault","description":"Latest PC gaming news, reviews, and tips","publisher":{"@type":"Organization","name":"GameVault"}}</script>
+  <!-- Google AdSense — Replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID -->
   <!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
-
-  <!-- ===== GOOGLE ANALYTICS (Replace with your ID) ===== -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script> -->
-
-  <!-- ===== FONTS ===== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&family=Exo+2:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;600;700&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #050810;
-      --bg2: #0a0f1e;
-      --bg3: #0f1628;
-      --card: #111827;
-      --border: #1e2d4a;
-      --accent: #00e5ff;
-      --accent2: #ff3d6b;
-      --accent3: #7c3aed;
-      --text: #e2e8f0;
-      --text-muted: #64748b;
-      --text-bright: #f8fafc;
-      --glow: 0 0 20px rgba(0,229,255,0.3);
-      --glow2: 0 0 20px rgba(255,61,107,0.3);
-    }
-
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Exo 2', sans-serif;
-      font-weight: 300;
-      overflow-x: hidden;
-    }
-
-    /* ---- SCAN LINES OVERLAY ---- */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
-      pointer-events: none;
-      z-index: 9999;
-    }
-
-    /* ---- GRID BG ---- */
-    .grid-bg {
-      position: fixed;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(0,229,255,0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,229,255,0.03) 1px, transparent 1px);
-      background-size: 50px 50px;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    /* ======= NAVBAR ======= */
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      background: rgba(5,8,16,0.92);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 5%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 68px;
-    }
-
-    .logo {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2rem;
-      letter-spacing: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      text-decoration: none;
-    }
-
-    .logo span {
-      color: var(--accent2);
-      -webkit-text-fill-color: var(--accent2);
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 2rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 600;
-      font-size: 0.9rem;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-
-    .nav-links a:hover { color: var(--accent); }
-
-    .nav-search {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .nav-search input {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 0.4rem 1rem;
-      border-radius: 4px;
-      font-family: 'Exo 2', sans-serif;
-      font-size: 0.85rem;
-      outline: none;
-      transition: border-color 0.2s;
-      width: 180px;
-    }
-
-    .nav-search input:focus { border-color: var(--accent); }
-
-    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
-    .hamburger span { width: 24px; height: 2px; background: var(--accent); display: block; transition: 0.3s; }
-
-    /* ======= HERO ======= */
-    .hero {
-      position: relative;
-      z-index: 1;
-      min-height: 90vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 4rem 5%;
-      overflow: hidden;
-    }
-
-    .hero-glow {
-      position: absolute;
-      width: 600px;
-      height: 600px;
-      background: radial-gradient(circle, rgba(0,229,255,0.08) 0%, transparent 70%);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      pointer-events: none;
-    }
-
-    .hero-glow2 {
-      position: absolute;
-      width: 400px;
-      height: 400px;
-      background: radial-gradient(circle, rgba(255,61,107,0.07) 0%, transparent 70%);
-      top: 30%;
-      right: 10%;
-      pointer-events: none;
-    }
-
-    .hero-tag {
-      display: inline-block;
-      background: rgba(0,229,255,0.1);
-      border: 1px solid rgba(0,229,255,0.3);
-      color: var(--accent);
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 0.75rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      padding: 0.4rem 1.2rem;
-      border-radius: 2px;
-      margin-bottom: 1.5rem;
-      animation: fadeDown 0.6s ease forwards;
-    }
-
-    .hero h1 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: clamp(3.5rem, 9vw, 8rem);
-      letter-spacing: 4px;
-      line-height: 0.95;
-      margin-bottom: 1.5rem;
-      animation: fadeUp 0.7s 0.1s ease both;
-    }
-
-    .hero h1 .line2 {
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      display: block;
-    }
-
-    .hero p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      max-width: 560px;
-      line-height: 1.7;
-      margin-bottom: 2.5rem;
-      animation: fadeUp 0.7s 0.2s ease both;
-    }
-
-    .hero-btns {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      animation: fadeUp 0.7s 0.3s ease both;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--accent), #0080ff);
-      color: #000;
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 0.9rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 0.85rem 2rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--glow);
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: var(--accent2);
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 0.9rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 0.85rem 2rem;
-      border: 1px solid var(--accent2);
-      border-radius: 4px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.2s, box-shadow 0.2s;
-    }
-
-    .btn-outline:hover {
-      background: rgba(255,61,107,0.1);
-      box-shadow: var(--glow2);
-    }
-
-    /* ======= TICKER ======= */
-    .ticker-wrap {
-      position: relative;
-      z-index: 1;
-      background: var(--bg3);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 0.6rem 0;
-      overflow: hidden;
-    }
-
-    .ticker {
-      display: flex;
-      gap: 4rem;
-      animation: ticker 25s linear infinite;
-      white-space: nowrap;
-    }
-
-    .ticker span {
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 600;
-      font-size: 0.8rem;
-      letter-spacing: 1px;
-      color: var(--text-muted);
-      text-transform: uppercase;
-    }
-
-    .ticker span b { color: var(--accent); margin-right: 0.5rem; }
-
-    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-
-    /* ======= SECTION ======= */
-    section { position: relative; z-index: 1; padding: 5rem 5%; }
-
-    .section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 3rem;
-    }
-
-    .section-title {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 2.5rem;
-      letter-spacing: 2px;
-      color: var(--text-bright);
-    }
-
-    .section-title span { color: var(--accent); }
-
-    .view-all {
-      color: var(--accent);
-      text-decoration: none;
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 600;
-      font-size: 0.85rem;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      border-bottom: 1px solid var(--accent);
-      padding-bottom: 2px;
-      transition: opacity 0.2s;
-    }
-
-    .view-all:hover { opacity: 0.7; }
-
-    /* ======= FEATURED GRID ======= */
-    .featured-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      grid-template-rows: auto auto;
-      gap: 1.5px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .feat-main { grid-row: 1 / 3; }
-
-    .feat-card {
-      position: relative;
-      overflow: hidden;
-      cursor: pointer;
-    }
-
-    .feat-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-      filter: brightness(0.7);
-    }
-
-    .feat-main { min-height: 500px; }
-    .feat-side { min-height: 245px; }
-
-    .feat-card:hover img { transform: scale(1.05); filter: brightness(0.85); }
-
-    .feat-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(5,8,16,0.95) 0%, transparent 60%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 2rem;
-    }
-
-    .feat-cat {
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 0.7rem;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-
-    .feat-title {
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 1.4rem;
-      line-height: 1.2;
-      color: var(--text-bright);
-      margin-bottom: 0.5rem;
-    }
-
-    .feat-main .feat-title { font-size: 2rem; }
-
-    .feat-meta {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      letter-spacing: 0.5px;
-    }
-
-    /* ======= AD BANNER ======= */
-    .ad-banner {
-      background: var(--bg3);
-      border: 1px dashed var(--border);
-      border-radius: 6px;
-      padding: 1.5rem;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.8rem;
-      letter-spacing: 1px;
-      font-family: 'Rajdhani', sans-serif;
-      text-transform: uppercase;
-      margin: 0 5%;
-    }
-
-    .ad-banner-label { font-size: 0.65rem; margin-bottom: 0.5rem; opacity: 0.5; }
-
-    /* Replace this div with your actual AdSense code */
-    .adsense-placeholder {
-      background: linear-gradient(135deg, var(--bg2), var(--bg3));
-      border: 1px dashed rgba(0,229,255,0.2);
-      border-radius: 4px;
-      height: 90px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: rgba(0,229,255,0.3);
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 0.8rem;
-      letter-spacing: 2px;
-    }
-
-    /* ======= BLOG CARDS GRID ======= */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .blog-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-      transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
-      cursor: pointer;
-      text-decoration: none;
-      display: block;
-    }
-
-    .blog-card:hover {
-      transform: translateY(-6px);
-      border-color: var(--accent);
-      box-shadow: 0 8px 30px rgba(0,229,255,0.1);
-    }
-
-    .card-img {
-      position: relative;
-      height: 200px;
-      overflow: hidden;
-    }
-
-    .card-img img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: brightness(0.8);
-      transition: transform 0.4s, filter 0.4s;
-    }
-
-    .blog-card:hover .card-img img {
-      transform: scale(1.08);
-      filter: brightness(1);
-    }
-
-    .card-badge {
-      position: absolute;
-      top: 1rem;
-      left: 1rem;
-      background: var(--accent2);
-      color: #fff;
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 0.65rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      padding: 0.2rem 0.7rem;
-      border-radius: 2px;
-    }
-
-    .card-badge.review { background: var(--accent3); }
-    .card-badge.tips { background: #059669; }
-    .card-badge.news { background: var(--accent2); }
-
-    .card-body { padding: 1.5rem; }
-
-    .card-meta {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      letter-spacing: 0.5px;
-      margin-bottom: 0.6rem;
-    }
-
-    .card-title {
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 1.15rem;
-      line-height: 1.3;
-      color: var(--text-bright);
-      margin-bottom: 0.8rem;
-    }
-
-    .card-excerpt {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      line-height: 1.6;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-
-    .card-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 1.2rem;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border);
-    }
-
-    .card-author {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    .author-avatar {
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent3), var(--accent));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.7rem;
-      font-weight: 700;
-      color: #fff;
-    }
-
-    .read-more {
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 600;
-      font-size: 0.78rem;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-
-    /* ======= CATEGORIES ======= */
-    .categories-section { background: var(--bg2); }
-
-    .cat-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-      gap: 1rem;
-    }
-
-    .cat-card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 2rem 1rem;
-      text-align: center;
-      text-decoration: none;
-      transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
-      cursor: pointer;
-    }
-
-    .cat-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 6px 24px rgba(0,229,255,0.1);
-    }
-
-    .cat-card:nth-child(1):hover { border-color: #00e5ff; }
-    .cat-card:nth-child(2):hover { border-color: #ff3d6b; }
-    .cat-card:nth-child(3):hover { border-color: #7c3aed; }
-    .cat-card:nth-child(4):hover { border-color: #059669; }
-    .cat-card:nth-child(5):hover { border-color: #f59e0b; }
-    .cat-card:nth-child(6):hover { border-color: #ef4444; }
-
-    .cat-icon {
-      font-size: 2.2rem;
-      margin-bottom: 0.8rem;
-      display: block;
-    }
-
-    .cat-name {
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 0.95rem;
-      letter-spacing: 1px;
-      color: var(--text-bright);
-    }
-
-    .cat-count {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      margin-top: 0.3rem;
-    }
-
-    /* ======= NEWSLETTER ======= */
-    .newsletter-section {
-      background: linear-gradient(135deg, var(--bg3) 0%, rgba(0,229,255,0.03) 100%);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .newsletter-inner {
-      max-width: 600px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .newsletter-inner h2 {
-      font-family: 'Bebas Neue', sans-serif;
-      font-size: 3rem;
-      letter-spacing: 3px;
-      margin-bottom: 1rem;
-    }
-
-    .newsletter-inner p {
-      color: var(--text-muted);
-      margin-bottom: 2rem;
-      line-height: 1.7;
-    }
-
-    .newsletter-form {
-      display: flex;
-      gap: 0.5rem;
-    }
-
-    .newsletter-form input {
-      flex: 1;
-      background: var(--card);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 0.9rem 1.2rem;
-      border-radius: 4px;
-      font-family: 'Exo 2', sans-serif;
-      font-size: 0.9rem;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-
-    .newsletter-form input:focus { border-color: var(--accent); }
-
-    /* ======= FOOTER ======= */
-    footer {
-      background: var(--bg2);
-      border-top: 1px solid var(--border);
-      padding: 4rem 5% 2rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 3rem;
-    }
-
-    .footer-brand p {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      line-height: 1.7;
-      margin-top: 1rem;
-    }
-
-    .footer-social {
-      display: flex;
-      gap: 0.8rem;
-      margin-top: 1.5rem;
-    }
-
-    .social-btn {
-      width: 36px;
-      height: 36px;
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.85rem;
-      transition: border-color 0.2s, color 0.2s;
-    }
-
-    .social-btn:hover { border-color: var(--accent); color: var(--accent); }
-
-    .footer-col h4 {
-      font-family: 'Rajdhani', sans-serif;
-      font-weight: 700;
-      font-size: 0.85rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--text-bright);
-      margin-bottom: 1.2rem;
-    }
-
-    .footer-col ul { list-style: none; }
-
-    .footer-col ul li { margin-bottom: 0.6rem; }
-
-    .footer-col ul li a {
-      color: var(--text-muted);
-      text-decoration: none;
-      font-size: 0.88rem;
-      transition: color 0.2s;
-    }
-
-    .footer-col ul li a:hover { color: var(--accent); }
-
-    .footer-bottom {
-      border-top: 1px solid var(--border);
-      padding-top: 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-    }
-
-    /* ======= ANIMATIONS ======= */
-    @keyframes fadeDown {
-      from { opacity: 0; transform: translateY(-15px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* ======= RESPONSIVE ======= */
-    @media (max-width: 900px) {
-      .nav-links, .nav-search { display: none; }
-      .hamburger { display: flex; }
-
-      .featured-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-      }
-
-      .feat-main { grid-row: auto; min-height: 350px; }
-      .feat-side { min-height: 200px; }
-
-      .footer-grid { grid-template-columns: 1fr 1fr; }
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 { font-size: 3.5rem; }
-      .newsletter-form { flex-direction: column; }
-      .footer-grid { grid-template-columns: 1fr; }
-      .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
-    }
-
-    /* ======= PROGRESS BAR ======= */
-    #progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 0%;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      z-index: 9999;
-      transition: width 0.1s;
-    }
+    :root{--bg:#050810;--bg2:#0a0f1e;--bg3:#0f1628;--card:#111827;--border:#1e2d4a;--accent:#00e5ff;--accent2:#ff3d6b;--text:#e2e8f0;--text-muted:#64748b;--text-bright:#f8fafc;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:'Exo 2',sans-serif;font-weight:300;overflow-x:hidden;}
+    body::before{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 2px,rgba(0,0,0,0.03) 2px,rgba(0,0,0,0.03) 4px);pointer-events:none;z-index:9998;}
+    .grid-bg{position:fixed;inset:0;background-image:linear-gradient(rgba(0,229,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,0.025) 1px,transparent 1px);background-size:50px 50px;pointer-events:none;z-index:0;}
+    #progress{position:fixed;top:0;left:0;width:0%;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));z-index:9999;}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:1000;background:rgba(5,8,16,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0 5%;display:flex;align-items:center;justify-content:space-between;height:68px;}
+    .logo{font-family:'Bebas Neue',sans-serif;font-size:2rem;letter-spacing:3px;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none;}
+    .nav-links{display:flex;gap:1.8rem;list-style:none;}
+    .nav-links a{color:var(--text-muted);text-decoration:none;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.85rem;letter-spacing:1.5px;text-transform:uppercase;transition:color 0.2s;}
+    .nav-links a:hover{color:var(--accent);}
+    .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+    .hamburger span{width:24px;height:2px;background:var(--accent);display:block;}
+    .mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;background:rgba(5,8,16,0.98);border-bottom:1px solid var(--border);padding:1.5rem 5%;z-index:999;}
+    .mobile-menu.open{display:block;}
+    .mobile-menu a{display:block;color:var(--text-muted);text-decoration:none;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:1rem;letter-spacing:1.5px;text-transform:uppercase;padding:0.8rem 0;border-bottom:1px solid var(--border);}
+    .mobile-menu a:hover{color:var(--accent);}
+
+    /* HERO */
+    .hero{position:relative;z-index:1;min-height:85vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:4rem 5%;overflow:hidden;}
+    .hero-glow{position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(0,229,255,0.07) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;}
+    .hero-tag{display:inline-block;background:rgba(0,229,255,0.1);border:1px solid rgba(0,229,255,0.3);color:var(--accent);font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.72rem;letter-spacing:3px;text-transform:uppercase;padding:0.4rem 1.2rem;border-radius:2px;margin-bottom:1.5rem;animation:fadeUp 0.6s ease both;}
+    .hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(3.5rem,9vw,7.5rem);letter-spacing:4px;line-height:0.95;margin-bottom:1.5rem;animation:fadeUp 0.6s 0.1s ease both;}
+    .hero h1 .line2{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:block;}
+    .hero p{font-size:1.05rem;color:var(--text-muted);max-width:520px;line-height:1.75;margin-bottom:2.5rem;animation:fadeUp 0.6s 0.2s ease both;}
+    .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;justify-content:center;animation:fadeUp 0.6s 0.3s ease both;}
+    .btn-primary{background:linear-gradient(135deg,var(--accent),#0080ff);color:#000;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.88rem;letter-spacing:2px;text-transform:uppercase;padding:0.85rem 2rem;border:none;border-radius:4px;cursor:pointer;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,229,255,0.3);}
+    .btn-outline{background:transparent;color:var(--accent2);font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.88rem;letter-spacing:2px;text-transform:uppercase;padding:0.85rem 2rem;border:1px solid var(--accent2);border-radius:4px;cursor:pointer;text-decoration:none;transition:background 0.2s;}
+    .btn-outline:hover{background:rgba(255,61,107,0.1);}
+
+    /* TICKER */
+    .ticker-wrap{position:relative;z-index:1;background:var(--bg3);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:0.6rem 0;overflow:hidden;}
+    .ticker{display:flex;gap:4rem;animation:ticker 30s linear infinite;white-space:nowrap;}
+    .ticker span{font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.78rem;letter-spacing:1px;color:var(--text-muted);text-transform:uppercase;}
+    .ticker span b{color:var(--accent);margin-right:0.5rem;}
+    @keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+    /* SECTIONS */
+    section{position:relative;z-index:1;padding:4.5rem 5%;}
+    .section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:2.5rem;}
+    .section-title{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:2px;color:var(--text-bright);}
+    .section-title span{color:var(--accent);}
+    .view-all{color:var(--accent);text-decoration:none;font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.82rem;letter-spacing:1.5px;text-transform:uppercase;border-bottom:1px solid var(--accent);padding-bottom:2px;}
+
+    /* BLOG GRID */
+    .blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;}
+    .blog-card{background:var(--card);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:transform 0.3s,border-color 0.3s,box-shadow 0.3s;text-decoration:none;display:block;}
+    .blog-card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 8px 30px rgba(0,229,255,0.1);}
+    .card-img{height:190px;overflow:hidden;position:relative;background:var(--bg3);}
+    .card-img-placeholder{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:3.5rem;background:linear-gradient(135deg,var(--bg3),var(--bg2));}
+    .card-badge{position:absolute;top:1rem;left:1rem;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;padding:0.2rem 0.7rem;border-radius:2px;color:#fff;}
+    .badge-review{background:#7c3aed;}
+    .badge-tips{background:#059669;}
+    .badge-news{background:var(--accent2);}
+    .badge-guide{background:#0080ff;}
+    .card-body{padding:1.4rem;}
+    .card-meta{font-size:0.75rem;color:var(--text-muted);margin-bottom:0.5rem;}
+    .card-title{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:1.08rem;line-height:1.3;color:var(--text-bright);margin-bottom:0.7rem;}
+    .card-excerpt{font-size:0.86rem;color:var(--text-muted);line-height:1.6;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;}
+    .card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:1.1rem;padding-top:0.9rem;border-top:1px solid var(--border);}
+    .read-more{font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.78rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);}
+
+    /* AD UNIT */
+    .ad-unit{position:relative;z-index:1;margin:0 5%;background:var(--bg3);border:1px dashed var(--border);border-radius:6px;padding:1.2rem;text-align:center;}
+    .ad-label{font-size:0.65rem;color:var(--text-muted);letter-spacing:2px;text-transform:uppercase;margin-bottom:0.5rem;font-family:'Rajdhani',sans-serif;}
+    .ad-placeholder{background:var(--card);border:1px solid var(--border);border-radius:4px;height:90px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:0.8rem;font-family:'Rajdhani',sans-serif;letter-spacing:1px;}
+
+    /* CATEGORIES */
+    .cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem;}
+    .cat-card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:1.8rem 1rem;text-align:center;text-decoration:none;transition:transform 0.2s,border-color 0.2s,box-shadow 0.2s;}
+    .cat-card:hover{transform:translateY(-4px);box-shadow:0 6px 20px rgba(0,229,255,0.08);}
+    .cat-card:nth-child(1):hover{border-color:#00e5ff;}
+    .cat-card:nth-child(2):hover{border-color:#ff3d6b;}
+    .cat-card:nth-child(3):hover{border-color:#7c3aed;}
+    .cat-card:nth-child(4):hover{border-color:#059669;}
+    .cat-card:nth-child(5):hover{border-color:#f59e0b;}
+    .cat-card:nth-child(6):hover{border-color:#0080ff;}
+    .cat-icon{font-size:2rem;margin-bottom:0.7rem;display:block;}
+    .cat-name{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.9rem;letter-spacing:1px;color:var(--text-bright);}
+    .cat-count{font-size:0.72rem;color:var(--text-muted);margin-top:0.3rem;}
+
+    /* NEWSLETTER */
+    .newsletter-section{background:linear-gradient(135deg,var(--bg3),rgba(0,229,255,0.03));border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+    .newsletter-inner{max-width:560px;margin:0 auto;text-align:center;}
+    .newsletter-inner h2{font-family:'Bebas Neue',sans-serif;font-size:2.8rem;letter-spacing:3px;margin-bottom:0.8rem;}
+    .newsletter-inner p{color:var(--text-muted);margin-bottom:1.8rem;line-height:1.7;}
+    .newsletter-form{display:flex;gap:0.5rem;}
+    .newsletter-form input{flex:1;background:var(--card);border:1px solid var(--border);color:var(--text);padding:0.85rem 1rem;border-radius:4px;font-family:'Exo 2',sans-serif;font-size:0.88rem;outline:none;transition:border-color 0.2s;}
+    .newsletter-form input:focus{border-color:var(--accent);}
+
+    /* FOOTER */
+    footer{background:var(--bg2);border-top:1px solid var(--border);padding:4rem 5% 2rem;position:relative;z-index:1;}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem;}
+    .footer-brand p{color:var(--text-muted);font-size:0.88rem;line-height:1.7;margin-top:1rem;}
+    .footer-col h4{font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.8rem;letter-spacing:2px;text-transform:uppercase;color:var(--text-bright);margin-bottom:1.2rem;}
+    .footer-col ul{list-style:none;}
+    .footer-col ul li{margin-bottom:0.6rem;}
+    .footer-col ul li a{color:var(--text-muted);text-decoration:none;font-size:0.86rem;transition:color 0.2s;}
+    .footer-col ul li a:hover{color:var(--accent);}
+    .footer-bottom{border-top:1px solid var(--border);padding-top:2rem;display:flex;justify-content:space-between;align-items:center;font-size:0.78rem;color:var(--text-muted);flex-wrap:wrap;gap:0.5rem;}
+
+    /* COOKIE BANNER */
+    .cookie-banner{position:fixed;bottom:0;left:0;right:0;background:rgba(10,15,30,0.98);border-top:1px solid var(--border);padding:1.2rem 5%;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;z-index:9997;flex-wrap:wrap;backdrop-filter:blur(10px);}
+    .cookie-banner p{color:var(--text-muted);font-size:0.85rem;line-height:1.6;flex:1;min-width:250px;}
+    .cookie-banner p a{color:var(--accent);text-decoration:none;}
+    .cookie-btns{display:flex;gap:0.8rem;flex-shrink:0;}
+    .cookie-accept{background:var(--accent);color:#000;font-family:'Rajdhani',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:1.5px;text-transform:uppercase;padding:0.6rem 1.5rem;border:none;border-radius:4px;cursor:pointer;}
+    .cookie-decline{background:transparent;color:var(--text-muted);font-family:'Rajdhani',sans-serif;font-weight:600;font-size:0.82rem;letter-spacing:1.5px;text-transform:uppercase;padding:0.6rem 1rem;border:1px solid var(--border);border-radius:4px;cursor:pointer;}
+
+    /* ANIMATIONS */
+    @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+    .fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.5s ease,transform 0.5s ease;}
+    .fade-in.visible{opacity:1;transform:translateY(0);}
+
+    /* RESPONSIVE */
+    @media(max-width:900px){.nav-links{display:none;}.hamburger{display:flex;}.footer-grid{grid-template-columns:1fr 1fr;}}
+    @media(max-width:600px){.hero h1{font-size:3.5rem;}.newsletter-form{flex-direction:column;}.footer-grid{grid-template-columns:1fr;}.footer-bottom{flex-direction:column;text-align:center;}.cookie-banner{flex-direction:column;}}
   </style>
 </head>
 <body>
-
 <div id="progress"></div>
 <div class="grid-bg"></div>
 
-<!-- ======= NAVBAR ======= -->
+<!-- COOKIE CONSENT BANNER -->
+<div class="cookie-banner" id="cookieBanner">
+  <p>🍪 We use cookies to improve your experience and show personalized ads via Google AdSense. By clicking "Accept", you agree to our <a href="privacy-policy.html">Privacy Policy</a>.</p>
+  <div class="cookie-btns">
+    <button class="cookie-decline" onclick="closeCookie()">Decline</button>
+    <button class="cookie-accept" onclick="acceptCookie()">Accept All</button>
+  </div>
+</div>
+
+<!-- NAVBAR -->
 <nav>
-  <a href="#" class="logo">Game<span>Vault</span></a>
+  <a href="index.html" class="logo">Game<span style="-webkit-text-fill-color:var(--accent2)">Vault</span></a>
   <ul class="nav-links">
-    <li><a href="#featured">Featured</a></li>
-    <li><a href="#reviews">Reviews</a></li>
-    <li><a href="#news">News</a></li>
-    <li><a href="#tips">Tips</a></li>
-    <li><a href="#categories">Categories</a></li>
-    <li><a href="#about">About</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="best-pc-games-2025.html">Reviews</a></li>
+    <li><a href="how-to-reduce-lag-pc.html">Tips</a></li>
+    <li><a href="best-gaming-pc-build-2025.html">Guides</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
-  <div class="nav-search">
-    <input type="text" placeholder="Search games..." />
-  </div>
-  <div class="hamburger" onclick="toggleMenu()">
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
-  </div>
+  </button>
 </nav>
 
-<!-- ======= HERO ======= -->
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">🏠 Home</a>
+  <a href="best-pc-games-2025.html">⭐ Reviews</a>
+  <a href="how-to-reduce-lag-pc.html">🎯 Tips & Tricks</a>
+  <a href="best-gaming-pc-build-2025.html">🛠️ Guides</a>
+  <a href="about.html">👥 About Us</a>
+  <a href="contact.html">📧 Contact</a>
+  <a href="privacy-policy.html">🔒 Privacy Policy</a>
+</div>
+
+<!-- HERO -->
 <section class="hero">
   <div class="hero-glow"></div>
-  <div class="hero-glow2"></div>
-  <div class="hero-tag">🎮 #1 Gaming Blog</div>
-  <h1>
-    Level Up Your
-    <span class="line2">Game Knowledge</span>
-  </h1>
-  <p>
-    Discover the latest gaming news, honest reviews, pro tips, and epic walkthroughs. Your next favorite game is waiting.
-  </p>
+  <div class="hero-tag">🎮 #1 PC Gaming Blog 2025</div>
+  <h1>Level Up Your<span class="line2">Game Knowledge</span></h1>
+  <p>Discover the latest PC gaming news, honest reviews, pro tips, and epic guides. Your next favorite game is waiting.</p>
   <div class="hero-btns">
-    <a href="#featured" class="btn-primary">Explore Posts</a>
-    <a href="#newsletter" class="btn-outline">Subscribe Free</a>
+    <a href="best-pc-games-2025.html" class="btn-primary">Read Reviews</a>
+    <a href="about.html" class="btn-outline">About Us</a>
   </div>
 </section>
 
-<!-- ======= BREAKING NEWS TICKER ======= -->
+<!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker">
-    <span><b>🔥 HOT</b>GTA VI Release Date Confirmed!</span>
-    <span><b>⭐ REVIEW</b>Elden Ring DLC — 9.5/10</span>
-    <span><b>📢 NEWS</b>PS5 Pro Now Available Worldwide</span>
-    <span><b>🎯 TIPS</b>Top 10 FPS Tricks for 2025</span>
-    <span><b>🏆 ESPORTS</b>World Championship Final Results</span>
-    <span><b>💡 GUIDE</b>Best Gaming Setup Under $500</span>
-    <span><b>🔥 HOT</b>GTA VI Release Date Confirmed!</span>
-    <span><b>⭐ REVIEW</b>Elden Ring DLC — 9.5/10</span>
-    <span><b>📢 NEWS</b>PS5 Pro Now Available Worldwide</span>
-    <span><b>🎯 TIPS</b>Top 10 FPS Tricks for 2025</span>
-    <span><b>🏆 ESPORTS</b>World Championship Final Results</span>
-    <span><b>💡 GUIDE</b>Best Gaming Setup Under $500</span>
+    <span><b>🔥 HOT</b>GTA VI PC Review — 9.5/10</span>
+    <span><b>⭐ TOP</b>Best PC Games of 2025 — Full List</span>
+    <span><b>💡 TIPS</b>How to Boost FPS in Any Game</span>
+    <span><b>🛠️ GUIDE</b>Best Gaming PC Build 2025</span>
+    <span><b>📢 NEWS</b>RTX 4070 — Best Value GPU?</span>
+    <span><b>🎮 GUIDE</b>Elden Ring Tips for Beginners</span>
+    <span><b>🔥 HOT</b>GTA VI PC Review — 9.5/10</span>
+    <span><b>⭐ TOP</b>Best PC Games of 2025 — Full List</span>
+    <span><b>💡 TIPS</b>How to Boost FPS in Any Game</span>
+    <span><b>🛠️ GUIDE</b>Best Gaming PC Build 2025</span>
+    <span><b>📢 NEWS</b>RTX 4070 — Best Value GPU?</span>
+    <span><b>🎮 GUIDE</b>Elden Ring Tips for Beginners</span>
   </div>
 </div>
 
-<!-- ======= FEATURED ======= -->
-<section id="featured">
-  <div class="section-header">
-    <h2 class="section-title">Featured <span>Stories</span></h2>
-    <a href="#" class="view-all">View All →</a>
-  </div>
-
-  <div class="featured-grid">
-    <div class="feat-card feat-main">
-      <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80" alt="Featured Game" loading="lazy" />
-      <div class="feat-overlay">
-        <div class="feat-cat">🔥 Featured · Review</div>
-        <div class="feat-title">Elden Ring Shadow of the Erdtree: The Definitive Dark Fantasy Experience</div>
-        <div class="feat-meta">June 21, 2025 &nbsp;·&nbsp; 8 min read &nbsp;·&nbsp; by Alex Storm</div>
-      </div>
-    </div>
-    <div class="feat-card feat-side">
-      <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?w=600&q=80" alt="Gaming News" loading="lazy" />
-      <div class="feat-overlay">
-        <div class="feat-cat">📢 News</div>
-        <div class="feat-title">GTA VI: Everything We Know About the Biggest Game of the Decade</div>
-        <div class="feat-meta">May 15, 2025</div>
-      </div>
-    </div>
-    <div class="feat-card feat-side">
-      <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=600&q=80" alt="Gaming Tips" loading="lazy" />
-      <div class="feat-overlay">
-        <div class="feat-cat">🎯 Tips & Tricks</div>
-        <div class="feat-title">10 Pro Gaming Tips That Will Instantly Improve Your Rank</div>
-        <div class="feat-meta">April 30, 2025</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======= AD BANNER ======= -->
-<div class="ad-banner">
-  <div class="ad-banner-label">Advertisement</div>
-  <div class="adsense-placeholder">
-    <!-- Paste your Google AdSense code here -->
-    AdSense Ad Unit (728×90) — Replace this div with your AdSense script
-  </div>
-</div>
-
-<!-- ======= LATEST REVIEWS ======= -->
+<!-- LATEST REVIEWS -->
 <section id="reviews">
   <div class="section-header">
     <h2 class="section-title">Latest <span>Reviews</span></h2>
-    <a href="#" class="view-all">View All →</a>
+    <a href="gta-vi-pc-review.html" class="view-all">View All →</a>
   </div>
   <div class="blog-grid">
-
-    <a href="#" class="blog-card">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=500&q=70" alt="Game Review" loading="lazy" />
-        <span class="card-badge review">Review</span>
-      </div>
+    <a href="gta-vi-pc-review.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🎮</div><span class="card-badge badge-review">Review</span></div>
       <div class="card-body">
-        <div class="card-meta">June 10, 2025 · 6 min read</div>
-        <div class="card-title">Baldur's Gate 3 — Still the Best RPG Ever Made in 2025?</div>
-        <div class="card-excerpt">A year after its explosive launch, BG3 continues to redefine what an RPG can be. We revisit the game with fresh eyes...</div>
-        <div class="card-footer">
-          <div class="card-author">
-            <div class="author-avatar">JS</div>
-            <span>Jake Storm</span>
-          </div>
-          <span class="read-more">Read →</span>
-        </div>
+        <div class="card-meta">March 2025 · 10 min read</div>
+        <div class="card-title">GTA VI PC Review – The Biggest Game Ever Made?</div>
+        <div class="card-excerpt">Rockstar's magnum opus finally arrives on PC. We spent 60+ hours in Vice City to give you the complete verdict.</div>
+        <div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ Alex Storm</span><span class="read-more">Read →</span></div>
       </div>
     </a>
-
-    <a href="#" class="blog-card">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=500&q=70" alt="Gaming" loading="lazy" />
-        <span class="card-badge review">Review</span>
-      </div>
+    <a href="cyberpunk-2077-review-2025.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🌆</div><span class="card-badge badge-review">Review</span></div>
       <div class="card-body">
-        <div class="card-meta">May 28, 2025 · 5 min read</div>
-        <div class="card-title">Helldivers 2: Six Months Later — Is the Hype Still Real?</div>
-        <div class="card-excerpt">We dive back into the chaotic co-op shooter to see if it has maintained its player base and what's changed...</div>
-        <div class="card-footer">
-          <div class="card-author">
-            <div class="author-avatar">NR</div>
-            <span>Nina Rao</span>
-          </div>
-          <span class="read-more">Read →</span>
-        </div>
+        <div class="card-meta">March 2025 · 8 min read</div>
+        <div class="card-title">Cyberpunk 2077 in 2025 – Is It Finally Worth Playing?</div>
+        <div class="card-excerpt">After years of patches and updates, we revisit Night City to see if Cyberpunk has finally lived up to its promise.</div>
+        <div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ Nina Rao</span><span class="read-more">Read →</span></div>
       </div>
     </a>
-
-    <a href="#" class="blog-card">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1609840113353-9f51e1c98f93?w=500&q=70" alt="Console" loading="lazy" />
-        <span class="card-badge review">Review</span>
-      </div>
+    <a href="nvidia-rtx-4070-review.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">💻</div><span class="card-badge badge-review">Review</span></div>
       <div class="card-body">
-        <div class="card-meta">May 5, 2025 · 7 min read</div>
-        <div class="card-title">PS5 Pro Review: Is the Upgrade Worth It for Every Gamer?</div>
-        <div class="card-excerpt">Sony's mid-generation refresh packs serious hardware improvements. We tested it across 15 titles to give you the verdict...</div>
-        <div class="card-footer">
-          <div class="card-author">
-            <div class="author-avatar">MK</div>
-            <span>Marco K.</span>
-          </div>
-          <span class="read-more">Read →</span>
-        </div>
+        <div class="card-meta">March 2025 · 7 min read</div>
+        <div class="card-title">NVIDIA RTX 4070 Review – Best Value GPU for PC Gaming?</div>
+        <div class="card-excerpt">Is the RTX 4070 the sweet spot for PC gamers in 2025? We benchmark it across 15 games to find out.</div>
+        <div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ Marco K.</span><span class="read-more">Read →</span></div>
       </div>
     </a>
   </div>
 </section>
 
-<!-- ======= LATEST NEWS ======= -->
-<section id="news" style="background: var(--bg2);">
+<!-- AD UNIT -->
+<div class="ad-unit">
+  <div class="ad-label">Advertisement</div>
+  <div class="ad-placeholder">
+    <!-- Replace with your Google AdSense ad unit code -->
+    AdSense Ad — 728×90 Leaderboard
+  </div>
+</div>
+
+<!-- TOP LISTS -->
+<section id="top-lists" style="background:var(--bg2);">
   <div class="section-header">
-    <h2 class="section-title">Gaming <span>News</span></h2>
-    <a href="#" class="view-all">View All →</a>
+    <h2 class="section-title">Top <span>Lists</span></h2>
+    <a href="best-pc-games-2025.html" class="view-all">View All →</a>
   </div>
   <div class="blog-grid">
-
-    <a href="#" class="blog-card">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?w=500&q=70" alt="Esports" loading="lazy" />
-        <span class="card-badge news">News</span>
-      </div>
+    <a href="best-pc-games-2025.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🏆</div><span class="card-badge badge-news">Top List</span></div>
       <div class="card-body">
-        <div class="card-meta">June 18, 2025 · 3 min read</div>
-        <div class="card-title">Xbox Acquires Another Major Studio — What It Means for Game Pass</div>
-        <div class="card-excerpt">Microsoft's gaming division continues its aggressive expansion strategy with yet another major acquisition announcement...</div>
-        <div class="card-footer">
-          <div class="card-author">
-            <div class="author-avatar">AL</div>
-            <span>Amy Lee</span>
-          </div>
-          <span class="read-more">Read →</span>
-        </div>
+        <div class="card-meta">March 2025 · 8 min read</div>
+        <div class="card-title">Top 10 Best PC Games of 2025 You Must Play</div>
+        <div class="card-excerpt">Our definitive ranking of the best PC games available right now — from massive RPGs to thrilling shooters.</div>
+        <div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ GameVault Team</span><span class="read-more">Read →</span></div>
       </div>
     </a>
-
-    <a href="#" class="blog-card">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=500&q=70" alt="Mobile Gaming" loading="lazy" />
-        <span class="card-badge news">News</span>
-      </div>
+    <a href="best-fps-games-pc-2025.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🎯</div><span class="card-badge badge-news">Top List</span></div>
       <div class="card-body">
-        <div class="card-meta">June 12, 2025 · 4 min read</div>
-        <div class="card-title">Mobile Gaming Revenue Hits All-Time High — Top Earners Revealed</div>
-        <div class="card-excerpt">The mobile gaming industry has crossed a new milestone with record revenues in Q2 2025. Here are the biggest winners...</div>
-        <div class="card-footer">
-          <div class="card-author">
-            <div class="author-avatar">RK</div>
-            <span>Ravi K.</span>
-          </div>
-          <span class="read-more">Read →</span>
-        </div>
+        <div class="card-meta">March 2025 · 6 min read</div>
+        <div class="card-title">10 Best FPS Games on PC in 2025 – Ranked</div>
+        <div class="card-excerpt">From competitive shooters to story-driven FPS masterpieces — the best first-person shooters you can play right now.</div>
+        <div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ GameVault Team</span><span class="read-more">Read →</span></div>
       </div>
     </a>
-
-    <a href="#" class="blog-card">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1636487658599-e5c21e8ba804?w=500&q=70" alt="VR Gaming" loading="lazy" />
-        <span class="card-badge news">News</span>
-      </div>
+    <a href="best-open-world-pc-games.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🌍</div><span class="card-badge badge-news">Top List</span></div>
       <div class="card-body">
-        <div class="card-meta">June 8, 2025 · 5 min read</div>
-        <div class="card-title">Apple Vision Pro Gaming: 5 Titles That Redefine Immersive Play</div>
-        <div class="card-excerpt">As the VR/AR space heats up, Apple's ecosystem is getting serious gaming titles. Here's what you should play first...</div>
-        <div class="card-footer">
-          <div class="card-author">
-            <div class="author-avatar">SP</div>
-            <span>Sara P.</span>
-          </div>
-          <span class="read-more">Read →</span>
-        </div>
+        <div class="card-meta">March 2025 · 7 min read</div>
+        <div class="card-title">15 Best Open World PC Games in 2025 – Ranked</div>
+        <div class="card-excerpt">Explore the biggest and best open world games available on PC right now, ranked by quality and content.</div>
+        <div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ GameVault Team</span><span class="read-more">Read →</span></div>
       </div>
     </a>
   </div>
 </section>
 
-<!-- ======= TIPS & GUIDES ======= -->
+<!-- TIPS & GUIDES -->
 <section id="tips">
   <div class="section-header">
     <h2 class="section-title">Tips &amp; <span>Guides</span></h2>
-    <a href="#" class="view-all">View All →</a>
+    <a href="how-to-reduce-lag-pc.html" class="view-all">View All →</a>
   </div>
   <div class="blog-grid">
-
-    <a href="#" class="blog-card">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=500&q=70" alt="Gaming Setup" loading="lazy" />
-        <span class="card-badge tips">Guide</span>
-      </div>
+    <a href="how-to-reduce-lag-pc.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">⚡</div><span class="card-badge badge-tips">Tips</span></div>
       <div class="card-body">
-        <div class="card-meta">June 15, 2025 · 10 min read</div>
-        <div class="card-title">Ultimate Gaming Setup Guide 2025: Build Your Dream Station on Any Budget</div>
-        <div class="card-excerpt">From budget builds to ultra-premium setups, we cover every component you need for the perfect gaming experience...</div>
-        <div class="card-footer">
-          <div class="card-author">
-            <div class="author-avatar">TM</div>
-            <span>Tom M.</span>
-          </div>
-          <span class="read-more">Read →</span>
-        </div>
+        <div class="card-meta">March 2025 · 7 min read</div>
+        <div class="card-title">How to Reduce Lag and Boost FPS in Any PC Game</div>
+        <div class="card-excerpt">Struggling with lag and low FPS? These expert tips will help you get the best performance out of your PC.</div>
+        <div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ GameVault Team</span><span class="read-more">Read →</span></div>
       </div>
     </a>
-
-    <a href="#" class="blog-card">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1585620385456-4759f9b5c7d9?w=500&q=70" alt="Gaming Tips" loading="lazy" />
-        <span class="card-badge tips">Tips</span>
-      </div>
+    <a href="best-gaming-pc-build-2025.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🛠️</div><span class="card-badge badge-guide">Guide</span></div>
       <div class="card-body">
-        <div class="card-meta">June 3, 2025 · 6 min read</div>
-        <div class="card-title">How to Reduce Lag and Boost FPS in Any PC Game — Expert Tips</div>
-        <div class="card-excerpt">Struggling with frame drops? These proven optimization techniques will squeeze every bit of performance out of your rig...</div>
-        <div class="card-footer">
-          <div class="card-author">
-            <div class="author-avatar">DX</div>
-            <span>Dev X</span>
-          </div>
-          <span class="read-more">Read →</span>
-        </div>
+        <div class="card-meta">March 2025 · 9 min read</div>
+        <div class="card-title">Best Gaming PC Build 2025 – Every Budget Covered</div>
+        <div class="card-excerpt">Build the perfect gaming PC for any budget. We cover builds from entry-level to ultra-premium setups.</div>
+        <div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ Marco K.</span><span class="read-more">Read →</span></div>
       </div>
     </a>
-
-    <a href="#" class="blog-card">
-      <div class="card-img">
-        <img src="https://images.unsplash.com/photo-1604481941703-37e3b0b83f1c?w=500&q=70" alt="Walkthrough" loading="lazy" />
-        <span class="card-badge tips">Walkthrough</span>
-      </div>
+    <a href="optimize-windows-11-gaming.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🖥️</div><span class="card-badge badge-guide">Guide</span></div>
       <div class="card-body">
-        <div class="card-meta">May 25, 2025 · 15 min read</div>
-        <div class="card-title">Complete Elden Ring Boss Walkthrough: Every Mandatory Fight Explained</div>
-        <div class="card-excerpt">Struggling with a particular boss in Elden Ring? Our comprehensive guide breaks down every attack pattern and strategy...</div>
-        <div class="card-footer">
-          <div class="card-author">
-            <div class="author-avatar">EK</div>
-            <span>Eva K.</span>
-          </div>
-          <span class="read-more">Read →</span>
-        </div>
+        <div class="card-meta">March 2025 · 6 min read</div>
+        <div class="card-title">How to Optimize Windows 11 for Maximum Gaming Performance</div>
+        <div class="card-excerpt">Simple Windows 11 tweaks that can dramatically improve your gaming performance without any hardware upgrades.</div>
+        <div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ GameVault Team</span><span class="read-more">Read →</span></div>
       </div>
     </a>
   </div>
 </section>
 
-<!-- ======= CATEGORIES ======= -->
-<section id="categories" class="categories-section">
+<!-- AD UNIT 2 -->
+<div class="ad-unit">
+  <div class="ad-label">Advertisement</div>
+  <div class="ad-placeholder">
+    <!-- Replace with your Google AdSense ad unit code -->
+    AdSense Ad — 728×90 Leaderboard
+  </div>
+</div>
+
+<!-- MORE POSTS -->
+<section style="background:var(--bg2);">
+  <div class="section-header">
+    <h2 class="section-title">More <span>Articles</span></h2>
+  </div>
+  <div class="blog-grid">
+    <a href="elden-ring-tips-beginners.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">⚔️</div><span class="card-badge badge-tips">Tips</span></div>
+      <div class="card-body"><div class="card-meta">March 2025 · 7 min read</div><div class="card-title">Elden Ring Tips for Beginners – 15 Things You Must Know</div><div class="card-excerpt">Starting Elden Ring for the first time? These essential tips will save you hours of frustration.</div><div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ Alex Storm</span><span class="read-more">Read →</span></div></div>
+    </a>
+    <a href="baldurs-gate-3-tips.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🐉</div><span class="card-badge badge-tips">Tips</span></div>
+      <div class="card-body"><div class="card-meta">March 2025 · 8 min read</div><div class="card-title">Baldur's Gate 3 Tips – 20 Secrets the Game Doesn't Tell You</div><div class="card-excerpt">Hidden mechanics, powerful builds, and game-changing tips that will transform your BG3 experience.</div><div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ Nina Rao</span><span class="read-more">Read →</span></div></div>
+    </a>
+    <a href="steam-tips-tricks.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🎲</div><span class="card-badge badge-guide">Guide</span></div>
+      <div class="card-body"><div class="card-meta">March 2025 · 5 min read</div><div class="card-title">10 Steam Tips Every PC Gamer Should Know in 2025</div><div class="card-excerpt">Hidden features and powerful tricks that will change how you use Steam forever.</div><div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ GameVault Team</span><span class="read-more">Read →</span></div></div>
+    </a>
+    <a href="best-free-pc-games-2025.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🆓</div><span class="card-badge badge-news">Free Games</span></div>
+      <div class="card-body"><div class="card-meta">March 2025 · 6 min read</div><div class="card-title">Best Free PC Games in 2025 – Top Free to Play Titles</div><div class="card-excerpt">Amazing free games you can download and play right now — no payment required.</div><div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ GameVault Team</span><span class="read-more">Read →</span></div></div>
+    </a>
+    <a href="pc-gaming-beginners-guide.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🚀</div><span class="card-badge badge-guide">Beginner</span></div>
+      <div class="card-body"><div class="card-meta">March 2025 · 10 min read</div><div class="card-title">PC Gaming Beginner's Guide 2025 – Everything to Get Started</div><div class="card-excerpt">New to PC gaming? This complete beginner's guide covers everything you need to know to get started.</div><div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ GameVault Team</span><span class="read-more">Read →</span></div></div>
+    </a>
+    <a href="best-rpg-pc-2025.html" class="blog-card fade-in">
+      <div class="card-img"><div class="card-img-placeholder">🗡️</div><span class="card-badge badge-review">RPG</span></div>
+      <div class="card-body"><div class="card-meta">March 2025 · 7 min read</div><div class="card-title">Best RPG Games on PC in 2025 – Ultimate List</div><div class="card-excerpt">The definitive list of the best role-playing games you can play on PC right now in 2025.</div><div class="card-footer"><span style="font-size:0.8rem;color:var(--text-muted)">✍️ GameVault Team</span><span class="read-more">Read →</span></div></div>
+    </a>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories">
   <div class="section-header">
     <h2 class="section-title">Browse <span>Categories</span></h2>
   </div>
   <div class="cat-grid">
-    <a href="#" class="cat-card">
-      <span class="cat-icon">🖥️</span>
-      <div class="cat-name">PC Gaming</div>
-      <div class="cat-count">48 posts</div>
-    </a>
-    <a href="#" class="cat-card">
-      <span class="cat-icon">🎮</span>
-      <div class="cat-name">Console</div>
-      <div class="cat-count">36 posts</div>
-    </a>
-    <a href="#" class="cat-card">
-      <span class="cat-icon">📱</span>
-      <div class="cat-name">Mobile</div>
-      <div class="cat-count">29 posts</div>
-    </a>
-    <a href="#" class="cat-card">
-      <span class="cat-icon">🏆</span>
-      <div class="cat-name">Esports</div>
-      <div class="cat-count">22 posts</div>
-    </a>
-    <a href="#" class="cat-card">
-      <span class="cat-icon">🥽</span>
-      <div class="cat-name">VR / AR</div>
-      <div class="cat-count">15 posts</div>
-    </a>
-    <a href="#" class="cat-card">
-      <span class="cat-icon">🛠️</span>
-      <div class="cat-name">Hardware</div>
-      <div class="cat-count">33 posts</div>
-    </a>
+    <a href="best-pc-games-2025.html" class="cat-card"><span class="cat-icon">⭐</span><div class="cat-name">Reviews</div><div class="cat-count">6 posts</div></a>
+    <a href="how-to-reduce-lag-pc.html" class="cat-card"><span class="cat-icon">🎯</span><div class="cat-name">Tips</div><div class="cat-count">5 posts</div></a>
+    <a href="best-gaming-pc-build-2025.html" class="cat-card"><span class="cat-icon">🛠️</span><div class="cat-name">Guides</div><div class="cat-count">6 posts</div></a>
+    <a href="best-fps-games-pc-2025.html" class="cat-card"><span class="cat-icon">🏆</span><div class="cat-name">Top Lists</div><div class="cat-count">3 posts</div></a>
+    <a href="best-free-pc-games-2025.html" class="cat-card"><span class="cat-icon">🆓</span><div class="cat-name">Free Games</div><div class="cat-count">1 post</div></a>
+    <a href="pc-gaming-beginners-guide.html" class="cat-card"><span class="cat-icon">🚀</span><div class="cat-name">Beginner</div><div class="cat-count">2 posts</div></a>
   </div>
 </section>
 
-<!-- ======= NEWSLETTER ======= -->
-<section id="newsletter" class="newsletter-section">
+<!-- NEWSLETTER -->
+<section class="newsletter-section">
   <div class="newsletter-inner">
     <h2>Stay in the <span style="color:var(--accent)">Loop</span></h2>
-    <p>Get the latest gaming news, reviews, and exclusive tips delivered straight to your inbox. No spam, unsubscribe anytime.</p>
+    <p>Get the latest PC gaming news, reviews, and tips straight to your inbox. No spam — unsubscribe anytime.</p>
     <div class="newsletter-form">
-      <input type="email" placeholder="Enter your email address..." />
-      <button class="btn-primary">Subscribe</button>
+      <input type="email" placeholder="your@email.com" />
+      <button class="btn-primary" onclick="subscribeNewsletter()">Subscribe</button>
     </div>
   </div>
 </section>
 
-<!-- ======= FOOTER ======= -->
-<footer id="about">
+<!-- FOOTER -->
+<footer>
   <div class="footer-grid">
-    <div class="footer-brand">
-      <a href="#" class="logo">Game<span>Vault</span></a>
-      <p>Your ultimate destination for gaming news, reviews, guides, and everything in between. Powered by gamers, for gamers.</p>
-      <div class="footer-social">
-        <a href="#" class="social-btn">𝕏</a>
-        <a href="#" class="social-btn">in</a>
-        <a href="#" class="social-btn">▶</a>
-        <a href="#" class="social-btn">📷</a>
-      </div>
+    <div>
+      <a href="index.html" class="logo">Game<span style="-webkit-text-fill-color:var(--accent2)">Vault</span></a>
+      <p>Your ultimate destination for PC gaming news, reviews, and guides. Powered by gamers, for gamers since 2020.</p>
     </div>
     <div class="footer-col">
-      <h4>Content</h4>
+      <h4>Reviews</h4>
       <ul>
-        <li><a href="#">Game Reviews</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Tips & Tricks</a></li>
-        <li><a href="#">Walkthroughs</a></li>
-        <li><a href="#">Esports</a></li>
+        <li><a href="gta-vi-pc-review.html">GTA VI Review</a></li>
+        <li><a href="cyberpunk-2077-review-2025.html">Cyberpunk 2077</a></li>
+        <li><a href="nvidia-rtx-4070-review.html">RTX 4070 Review</a></li>
+        <li><a href="best-pc-games-2025.html">Top 10 PC Games</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Platforms</h4>
+      <h4>Guides</h4>
       <ul>
-        <li><a href="#">PC Games</a></li>
-        <li><a href="#">PlayStation</a></li>
-        <li><a href="#">Xbox</a></li>
-        <li><a href="#">Nintendo</a></li>
-        <li><a href="#">Mobile</a></li>
+        <li><a href="how-to-reduce-lag-pc.html">Reduce Lag</a></li>
+        <li><a href="best-gaming-pc-build-2025.html">PC Build Guide</a></li>
+        <li><a href="optimize-windows-11-gaming.html">Windows 11 Tips</a></li>
+        <li><a href="steam-tips-tricks.html">Steam Tips</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>Company</h4>
+      <h4>Site</h4>
       <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms of Use</a></li>
-        <li><a href="#">Advertise</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="disclaimer.html">Disclaimer</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
     <span>© 2025 GameVault. All rights reserved.</span>
-    <span>Built for gamers worldwide 🎮</span>
+    <span>Made for PC Gamers 🎮</span>
   </div>
 </footer>
 
 <script>
-  // Reading progress bar
-  window.addEventListener('scroll', () => {
-    const prog = document.getElementById('progress');
-    const scrollTop = document.documentElement.scrollTop;
-    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    prog.style.width = (scrollTop / scrollHeight * 100) + '%';
+  // Progress bar
+  window.addEventListener('scroll',()=>{
+    const p=document.getElementById('progress');
+    const s=document.documentElement.scrollTop;
+    const h=document.documentElement.scrollHeight-document.documentElement.clientHeight;
+    p.style.width=(s/h*100)+'%';
   });
 
-  // Smooth nav toggle (mobile)
-  function toggleMenu() {
-    const links = document.querySelector('.nav-links');
-    if (links) {
-      links.style.display = links.style.display === 'flex' ? 'none' : 'flex';
-    }
+  // Mobile menu
+  function toggleMenu(){
+    document.getElementById('mobileMenu').classList.toggle('open');
   }
 
-  // Intersection Observer for fade-in on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.opacity = '1';
-        e.target.style.transform = 'translateY(0)';
-      }
-    });
-  }, { threshold: 0.1 });
+  // Cookie banner
+  function acceptCookie(){
+    localStorage.setItem('cookieAccepted','true');
+    document.getElementById('cookieBanner').style.display='none';
+  }
+  function closeCookie(){
+    document.getElementById('cookieBanner').style.display='none';
+  }
+  if(localStorage.getItem('cookieAccepted')){
+    document.getElementById('cookieBanner').style.display='none';
+  }
 
-  document.querySelectorAll('.blog-card, .cat-card, .feat-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-    observer.observe(el);
-  });
+  // Newsletter
+  function subscribeNewsletter(){
+    alert('Thank you for subscribing to GameVault!');
+  }
+
+  // Fade in on scroll
+  const observer=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');}});
+  },{threshold:0.1});
+  document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
 </script>
-
 </body>
 </html>
