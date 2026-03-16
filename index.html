@@ -17,15 +17,15 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1388443205488755" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Raleway:wght@400;500;600;700&family=Merriweather:wght@300;400&display=swap" rel="stylesheet" />
-  <style>
+<style>
     :root {
-      --bg: #fdf8f2;
-      --bg2: #f5ede0;
-      --bg3: #ede3d5;
+      --bg: #ffffff;        /* changed from #fdf8f2 */
+      --bg2: #ffffff;       /* changed from #f5ede0 */
+      --bg3: #ffffff;       /* changed from #ede3d5 */
       --card: #ffffff;
       --border: #e8ddd0;
-      --shadow: 0 4px 20px rgba(0,0,0,0.08);
-      --shadow-hover: 0 8px 32px rgba(0,0,0,0.14);
+      --shadow: 0 4px 20px rgba(0,0,0,0.05);
+      --shadow-hover: 0 8px 32px rgba(0,0,0,0.12);
       --blue: #1a56db;
       --blue-light: #e8f0ff;
       --orange: #f97316;
@@ -34,6 +34,41 @@
       --text-muted: #7a6a58;
       --text-bright: #1a1008;
     }
+    
+    /* Keep these elements white as well */
+    nav { background:rgba(255,255,255,0.97); } /* changed from rgba(253,248,242,0.97) */
+    
+    .hero { background:linear-gradient(135deg, #ffffff 0%, #f8f8f8 100%); } /* changed from cream gradient */
+    
+    .featured-strip { background:linear-gradient(135deg,var(--blue) 0%,#1447c0 100%); } /* keeping blue strip */
+    
+    .ticker-wrap { background:var(--blue); } /* keeping blue ticker */
+    
+    .newsletter-section { background:var(--orange); } /* keeping orange newsletter */
+    
+    footer { background:var(--text-bright); } /* keeping dark footer */
+    
+    /* Add a subtle border to sections to maintain visual separation */
+    section:not(.featured-strip):not(.newsletter-section) {
+      border-bottom: 1px solid var(--border);
+    }
+    
+    /* Adjust card background to pure white */
+    .blog-card { background:#ffffff; }
+    
+    /* Make category cards pure white */
+    .cat-card { background:#ffffff; }
+    
+    /* Adjust hero overlay colors */
+    .hero::before { background:radial-gradient(circle, rgba(249,115,22,0.04) 0%, transparent 70%); }
+    .hero::after { background:radial-gradient(circle, rgba(26,86,219,0.03) 0%, transparent 70%); }
+    
+    /* Make mobile menu white */
+    .mobile-menu { background:#ffffff; }
+    
+    /* Make cookie banner white */
+    .cookie-banner { background:#ffffff; }
+</style>
     * { margin:0; padding:0; box-sizing:border-box; }
     html { scroll-behavior:smooth; }
     body { background:var(--bg); color:var(--text); font-family:'Merriweather',serif; font-weight:300; overflow-x:hidden; }
